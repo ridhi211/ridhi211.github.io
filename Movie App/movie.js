@@ -18,16 +18,15 @@ async function getMovies(url) { //creating a function and getting the passed val
 
         const image =`<img class ="backdrop_image" src="${imgPath + ele.backdrop_path}" >`
  
-        const newOverview =`<p>Overview:${ele.overview}</p>`
+        const newOverview =`<p>Overview: ${ele.overview}</p>`
 
         const contents = `<h2> Title: ${ele.title} </h2>
             <img class = "backdrop_image" src=" ${imgPath + ele.backdrop_path}">
             <p>Overview: ${ele.overview}</p>
         `
         newElement.innerHTML = contents
-        console.log(newElement)
 
-        document.getElementById("movie").append(newTitleElement, image, newOverview) //appending those created new elements inside <div id="movie"> this element                          
+        document.getElementById("movie").append(newElement) //appending those created new elements inside <div id="movie"> this element                          
         
     }) 
     //end of map method
