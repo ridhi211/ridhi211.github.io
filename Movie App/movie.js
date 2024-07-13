@@ -14,12 +14,6 @@ async function getMovies(url) { //creating a function and getting the passed val
         
         const newElement = document.createElement("div") 
 
-        const newTitleElement  = `<h2> Title: ${ele.title} </h2>` // keeping the title inside a newly created element 
-
-        const image =`<img class ="backdrop_image" src="${imgPath + ele.backdrop_path}" >`
- 
-        const newOverview =`<p>Overview: ${ele.overview}</p>`
-
         const contents = `<h2> Title: ${ele.title} </h2>
             <img class = "backdrop_image" src=" ${imgPath + ele.backdrop_path}">
             <p>Overview: ${ele.overview}</p>
