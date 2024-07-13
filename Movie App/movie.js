@@ -11,24 +11,24 @@ async function getMovies(url) { //creating a function and getting the passed val
 
     //looping through the array data
     fetchedData.results.map(function (ele) {
-
         
-        const newTitleElement = document.createElement("h2") //creating a new h2 element
-        newTitleElement.innerHTML = `Title:${ele.title} ` // keeping the title inside a newly created element 
+        const newElement = document.createElement("div") 
 
-        const image = document.createElement("img")
-        image.setAttribute("src", imgPath + ele.backdrop_path)
+        const newTitleElement  = `<h2> Title: ${ele.title} </h2>` // keeping the title inside a newly created element 
 
+        const image =`<img class ="backdrop_image" src="${imgPath + ele.backdrop_path}" >`
+ 
+        const newOverview =`<p>Overview:${ele.overview}</p>`
 
-        const newOverview = document.createElement("p")
-        const Overview = `Overview:${ele.overview}`
-        newOverview.innerHTML = Overview
+        const contents = `<h2> Title: ${ele.title} </h2>
+            <img class = "backdrop_image" src=" ${imgPath + ele.backdrop_path}">
+            <p>Overview: ${ele.overview}</p>
+        `
+        newElement.innerHTML = contents
+        console.log(newElement)
 
-        document.getElementById("movie").append(newTitleElement, newOverview, image) //appending those created new elements inside <div id="movie"> this element                          
+        document.getElementById("movie").append(newTitleElement, image, newOverview) //appending those created new elements inside <div id="movie"> this element                          
         
-        document.createElement("div").innerHTML 
-        document.createElement("div").innerHTML 
-
     }) 
     //end of map method
 
