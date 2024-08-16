@@ -1,0 +1,51 @@
+body{
+    background-color: #f6cfcf;    
+}
+
+#movie > div {
+    width: 25%; 
+    padding: 10px
+}
+
+#movie > div > div{
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100%;
+    background-color: white;    
+
+}
+
+#movie  img {
+    width: 100%; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+
+#movie {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+*{
+   box-sizing: border-box;
+   
+}
+
+#movie > div >div > p{
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#movie h2{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+h1{
+    text-align: center;
+
+}
