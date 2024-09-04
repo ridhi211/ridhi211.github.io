@@ -1,0 +1,5 @@
+INVESTMENT CALCULATOR
+In this project Ive created an investment calculator , 
+we can give inputs such as i) Initial investmnt, ii) Annual invstmnt, iii) Expected rtn % and iv) duration in year.
+Based on these input values I will show the interest amt for each particular yr and also showing total interest increasing per year .
+These calculated output will show upto the year duration we give in the input.

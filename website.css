@@ -34,7 +34,7 @@ p{
 }
 
 a {
-    color: #FFEB3B;
+    color: #401f82;
     text-decoration: underline;
 }
 
@@ -65,6 +65,8 @@ a {
     border-color: #401f82;
 }
 
+
+
 .box {
     width: 100%;
     padding: 50px;
@@ -75,6 +77,12 @@ a {
     padding: 50px;
     background-color: #ac82ee;
 }
+.skill-sec .box{
+    width: 56%;
+    padding: 10px;
+    background-color: #ac82ee;
+} 
+
 .full-box li{
     margin-bottom: 23px;
 }
